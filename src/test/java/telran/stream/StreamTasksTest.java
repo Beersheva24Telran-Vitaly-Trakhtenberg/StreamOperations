@@ -17,6 +17,7 @@ public class StreamTasksTest
         int[] start3 = {8};
         int[] start4 = {};
 
+
         // #1
         int[] shuffled = StreamTasks.shuffle(start1);
         // TEST #1: arrays are different by order of elements
