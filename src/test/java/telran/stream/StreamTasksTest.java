@@ -1,9 +1,7 @@
 package telran.stream;
 
-import org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import telran.stream.StreamTasks.*;
 
 import java.util.Arrays;
 

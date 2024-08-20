@@ -1,9 +1,6 @@
 package telran.stream;
 
-import java.util.Collections;
 import java.util.Random;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class StreamTasks
 {
