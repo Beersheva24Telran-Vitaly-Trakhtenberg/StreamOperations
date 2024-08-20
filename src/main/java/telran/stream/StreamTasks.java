@@ -19,10 +19,7 @@ public class StreamTasks
         return random.ints(0, length)
                 .distinct()
                 .limit(length)
-                .boxed()
-                .collect(Collectors.toList())
-                .stream()
-                .mapToInt(i -> src_arr[i])
+                .map(i -> src_arr[i])
                 .toArray();
     }
 }
