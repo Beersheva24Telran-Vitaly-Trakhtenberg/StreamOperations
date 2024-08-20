@@ -12,9 +12,6 @@ public class StreamTasks
     {
         Random random = new Random();
         int length = src_arr.length;
-        if (length == 0) {
-            return new int[0];
-        }
 
         return random.ints(0, length)
                 .distinct()

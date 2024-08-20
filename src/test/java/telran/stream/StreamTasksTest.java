@@ -47,12 +47,6 @@ public class StreamTasksTest
         assertArrayEquals(start3, shuffled);
 
         // #4
-        shuffled = StreamTasks.shuffle(start4);
-        // TEST #1: arrays are different by order of elements
-        assertEquals(Arrays.toString(start4), Arrays.toString(shuffled), "The array was shuffled, but nothing to do");
-        // TEST #2: arrays are equal by elements and number of elements
-        Arrays.sort(start4);
-        Arrays.sort(shuffled);
-        assertArrayEquals(start4, shuffled);
+        assertThrowsExactly(IllegalArgumentException.class, () -> StreamTasks.shuffle(start4));
     }
 }
